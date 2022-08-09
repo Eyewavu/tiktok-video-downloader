@@ -94,6 +94,6 @@ function download_binary(input) {
       download_btn.download =""
       URL.revokeObjectURL(uri)
 
-    },300)
+    },2000)
   }
 }
