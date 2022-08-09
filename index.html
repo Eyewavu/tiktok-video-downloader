@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiktok video downloader</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    
+    <div id="app">
+      <form action="/convert" method="get">
+        <div>
+          <label for="link">Enter video url:</label>
+        </div>
+        <div class="input">
+          <input type="text" name="link" required autocomplete="off" placeholder="https://vm.tiktok.com/..../?k=1">
+          <button type="submit">Convert</button>
+        </div>
+      </form>
+
+      <div data-hidden="true" data-type="message-box" class="wait">
+        <span>Please wait...</span>
+      </div>
+
+      <div data-hidden="true" data-type="message-box" class="err">
+        <span>video not found</span>
+        <button>Try again</button>
+      </div>
+
+      <div data-hidden="true" data-type="message-box" class="ready">
+        <span>your video is ready</span>
+        <button data-type="download">
+          <a>Download</a>
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>
