@@ -14,7 +14,10 @@
     "npm": "8.15.1"
   },
   "main": "server.mjs",
-  "author": "",
+  "author": "Eyewavu",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "url": "https://github.com/Eyewavu/tiktok-video-downloader"
+  }
 }
